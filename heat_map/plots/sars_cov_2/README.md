@@ -1,0 +1,1 @@
+Directory to store heat map plots for SARS-CoV-2 infection risk for uniform occupancy times.

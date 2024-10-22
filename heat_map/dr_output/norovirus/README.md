@@ -1,0 +1,1 @@
+Directory to store `.csv` output data for uniform occupancy times for norovirus.

@@ -1,0 +1,1 @@
+Directory to store heat map plots for norovirus infection risk for uniform occupancy times.
