@@ -9,6 +9,8 @@ Ciara A. Higham<sup>1,*</sup>, Dr Martín López-García<sup>2</sup>, Prof. Cath
 
 Supporting code and data for "A Quantitative Microbial Risk Assessment (QMRA) framework for exposure from toilet flushing using experimental aerosol concentration measurements".
 
+doi: [10.1016/j.indenv.2024.100069](https://doi.org/10.1016/j.indenv.2024.100069)
+
 The code is written in R version 4.3.2 and has been run using RStudio 2023.12.0.
 
 ## Repository contents
