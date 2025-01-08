@@ -462,6 +462,9 @@ for (arrangement in c("S1", "S2")) {
           
           rho = sars_2_conc # viral load
           
+          # f - factor for gc to PFU
+          f = runif(nrow(final_data_df), 100, 1000)
+          
           # exponential dose response model
           doseResponse <- function(dose) {
             response <- 1 - exp(-dose * k)
@@ -481,7 +484,7 @@ for (arrangement in c("S1", "S2")) {
               percentile,
               nrow(final_data_df)
             )
-          
+          f = runif(nrow(final_data_df), 2, 10)
           rho = norovirus_conc # viral load
           
           # fractional poisson dose-response
@@ -498,14 +501,11 @@ for (arrangement in c("S1", "S2")) {
         breath <-
           rtruncnorm(
             nrow(final_data_df),
-            a = 0,
-            b = Inf,
+            a = 9.26e-5 * 60,
+            b = 2.686e-4 * 60,
             mean = 1.2e-2,
             sd = 2.5e-3
           )
-        
-        # f - factor for gc to PFU
-        f = runif(nrow(final_data_df), 100, 1000)
         
         # volume of faeces in L
         vol_faeces <-
