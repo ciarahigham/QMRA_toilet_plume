@@ -31,8 +31,8 @@ ach_levels <- c(1.5, 3, 6)
 # groupings for t_enter
 t_enter_conditions <- list(
   "<600" = combined$t_enter < 600,
-  "<120" = combined$t_enter < 120,
-  "120-600" = combined$t_enter >= 120 & combined$t_enter < 600
+  "<60" = combined$t_enter < 60,
+  "60-600" = combined$t_enter >= 60 & combined$t_enter < 600
 )
 
 # data frame for the results
